@@ -46,5 +46,3 @@ const game = () => {
     console.log(`Score : You ${myScore} vs Computer ${comScore}`);
   }
 };
-
-game();
