@@ -7,6 +7,7 @@
 :root {
   --primary-clr: #b73e3e;
   --secondary-clr: #dd5353;
+  --winning-clr: #66de93;
   --background-clr-1: #dbc8ac;
   --background-clr-2: #eddbc0;
 }
@@ -97,4 +98,28 @@ h3 {
 .scissors {
   background-image: url("img/scissors.png");
   background-size: cover;
+}
+
+.footer {
+  text-align: center;
+  margin-block: 2rem;
+}
+
+.footer p {
+  font-weight: 700;
+  color: var(--primary-clr);
+  margin-bottom: 2rem;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: var(--secondary-clr);
+  display: inline-block;
+  color: var(--background-clr-2);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.win {
+  color: var(--winning-clr);
 }
