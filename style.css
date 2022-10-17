@@ -4,10 +4,97 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-clr: #b73e3e;
+  --secondary-clr: #dd5353;
+  --background-clr-1: #dbc8ac;
+  --background-clr-2: #eddbc0;
+}
+
 body {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Roboto", sans-serif;
+  color: #333;
+  background-color: var(--background-clr-2);
+}
+
+.title {
+  font-size: 3em;
+  font-weight: 700;
+  color: var(--primary-clr);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+h1 {
+  color: var(--primary-clr);
+  font-size: 4rem;
+}
+
+h2 {
+  color: #444;
+  font-size: 2rem;
+}
+
+h3 {
+  color: var(--secondary-clr);
+  font-size: 1.3rem;
+}
+
+.main,
+.player,
+.choise,
+.comp {
+  display: flex;
+}
+
+.player,
+.comp {
+  flex-direction: column;
+  text-align: center;
+}
+
+.border {
+  width: 3px;
+  background-color: var(--secondary-clr);
+}
+
+.score {
+  text-align: center;
+}
+
+.choise {
+  flex-direction: row;
+  gap: 1rem;
+  padding-inline: 2rem;
+  margin-block: 1rem;
+}
+
+.box {
+  width: 5rem;
+  height: 5rem;
+
+  border-radius: 1rem;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.paper {
+  background-image: url("img/paper.png");
+  background-size: cover;
+}
+
+.rock {
+  background-image: url("img/rock.png");
+  background-size: cover;
+}
+
+.scissors {
+  background-image: url("img/scissors.png");
+  background-size: cover;
 }
